@@ -1,0 +1,42 @@
+:root {
+  /* Colors */
+  --color-warm-white: #FAF8F5;
+  --color-beige: #EFE7DE;
+  --color-sage: #8DAA91;
+  --color-sage-dark: #6E8C73;
+  --color-olive: #3B4638;
+  --color-olive-light: #4E5C4A;
+  --color-gold: #D4B26A;
+  --color-gold-light: #E4CB98;
+  --color-white: #FFFFFF;
+  --color-ink: #2A2E27;
+  --color-ink-soft: rgba(42, 46, 39, 0.65);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Layout */
+  --container-width: 1280px;
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 28px;
+  --radius-full: 999px;
+
+  /* Motion */
+  --ease-default: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 0.25s var(--ease-default);
+  --transition-medium: 0.45s var(--ease-default);
+
+  /* Shadow */
+  --shadow-soft: 0 8px 30px rgba(59, 70, 56, 0.08);
+  --shadow-medium: 0 20px 50px rgba(59, 70, 56, 0.14);
+}

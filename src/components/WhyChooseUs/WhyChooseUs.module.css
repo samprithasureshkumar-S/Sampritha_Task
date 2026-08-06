@@ -1,0 +1,87 @@
+.section {
+  background-color: var(--color-warm-white);
+}
+
+.header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto var(--space-lg);
+}
+
+.header h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+  margin-bottom: 0.8rem;
+}
+
+.header p {
+  color: var(--color-ink-soft);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.3rem;
+}
+
+@media (min-width: 620px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--color-beige);
+  border-radius: var(--radius-md);
+  padding: 2.2rem 1.6rem;
+  text-align: center;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background-color: var(--color-sage);
+}
+
+.card:hover .title,
+.card:hover .desc {
+  color: var(--color-warm-white);
+}
+
+.card:hover .iconWrap {
+  background-color: var(--color-warm-white);
+}
+
+.iconWrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--color-warm-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+  transition: background-color var(--transition-fast);
+}
+
+.icon {
+  font-size: 1.7rem;
+  color: var(--color-sage-dark);
+}
+
+.title {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  transition: color var(--transition-fast);
+}
+
+.desc {
+  font-size: 0.88rem;
+  color: var(--color-ink-soft);
+  transition: color var(--transition-fast);
+}

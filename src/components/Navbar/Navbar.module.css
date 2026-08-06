@@ -1,0 +1,126 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(250, 248, 245, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(59, 70, 56, 0.08);
+  transition: box-shadow var(--transition-fast);
+}
+
+.scrolled {
+  box-shadow: 0 4px 24px rgba(59, 70, 56, 0.08);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-olive);
+  flex-shrink: 0;
+}
+
+.logo span {
+  color: var(--color-gold);
+}
+
+.links {
+  display: none;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.links a {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  position: relative;
+  padding: 0.3rem 0;
+  transition: color var(--transition-fast);
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--color-gold);
+  transition: width var(--transition-fast);
+}
+
+.links a:hover {
+  color: var(--color-sage-dark);
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .links {
+    display: flex;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.iconBtn {
+  font-size: 1.25rem;
+  color: var(--color-olive);
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.iconBtn:hover {
+  color: var(--color-sage-dark);
+  transform: translateY(-1px);
+}
+
+.menuBtn {
+  font-size: 1.5rem;
+  color: var(--color-olive);
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  .menuBtn {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  overflow: hidden;
+  background-color: var(--color-warm-white);
+  border-bottom: 1px solid rgba(59, 70, 56, 0.08);
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem 1.5rem;
+  gap: 1.1rem;
+}
+
+.mobileLinks a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-olive);
+}
